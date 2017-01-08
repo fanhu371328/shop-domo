@@ -1,0 +1,788 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+.pos_abs {
+	position: absolute;
+}
+
+.pos_rel {
+	position: relative;
+}
+
+.mr10 {
+	margin-right: 10px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt20 {
+	margin-top: 0.2rem;
+}
+
+.mt30 {
+	margin-top: 0.3rem;
+}
+
+.mb10 {
+	margin-bottom: 0.1rem;
+}
+
+.mb30 {
+	margin-bottom: 0.3rem;
+}
+
+.pb5 {
+	padding-bottom: 5px;
+}
+
+.full-img {
+	width: 100%;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+.txt-left {
+	text-align: left;
+}
+
+.txt-right {
+	text-align: right;
+}
+
+.lh40 {
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+.lh40 .go-time input {
+	height: .2rem;
+	width: 1rem;
+	font-size: .14rem;
+	color: #000;
+}
+.ver-middle {
+	vertical-align: middle;
+}
+
+.dis_block {
+	display: block;
+}
+
+.bg-green {
+	background: #8ad928;
+}
+
+.bg-fffaf4 {
+	background: #fffaf4;
+}
+
+.bg-white {
+	background: #fff;
+}
+
+.f26 {
+	font-size: 0.26rem;
+}
+
+.f24 {
+	font-size: 0.24rem;
+}
+
+.f22 {
+	font-size: 0.22rem;
+}
+
+.f20 {
+	font-size: 0.20rem;
+}
+
+.menu_box .full-img,
+.team_menu .full-img {
+	border-radius: 0.1rem;
+}
+
+.topHead {
+	background: #333;
+	color: #fff;
+	font-size: 0.24rem;
+	padding: 0.15rem 0;
+}
+
+.topHead .goBack {
+	left: 0.2rem;
+	top: 0.15rem;
+	color: #fff;
+}
+
+
+/* =============== 首页 ============== */
+
+#logo {
+	background: #ecf6d9;
+	height: 0.8rem;
+}
+
+#logo img {
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.head {
+	font-size: 0.2rem;
+	padding-top: 0.15rem;
+	padding-bottom: 0.15rem;
+}
+
+.head,
+.head a {
+	color: #fff;
+}
+
+#nav-dishes {
+	/*padding-right:5px;*/
+}
+
+#list-dishes {
+	padding-left: 0;
+}
+
+#list-dishes .col-xs-6 {
+	padding-right: 0;
+}
+
+#list-dishes .row {
+	margin-right: 0;
+}
+
+
+/*菜品列表*/
+
+#list-dishes {}
+
+#list-dishes .row>div>a {
+	border: 2px solid #fff;
+	position: relative;
+	border-radius: 0.1rem;
+	overflow: hidden;
+	color: #000000;
+	display: block;
+}
+
+#list-dishes a.cur {
+	border: 2px solid #18B4ED;
+	background: #f0f0f0;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+
+/* 选择框*/
+
+#list-dishes a:hover {
+	text-decoration: none;
+}
+
+#list-dishes img {
+	width: 100%;
+}
+
+#list-dishes .title {
+	font-size: 0.20rem;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #FFF;
+	padding: 0.1rem;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	border-radius: 0 0 0.1rem 0.1rem;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+#list-dishes .menu .price {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #FFFFFF;
+	background: url(../images/icon-bjds.png) no-repeat 0 0;
+	background-size: 100% auto;
+	background-origin: border-box;
+	padding: 14px 2px;
+	font-size: 0.05rem;
+}
+
+
+/*菜品导航*/
+
+#nav-dishes {
+	min-height: 300px;
+	font-size: 0.2rem;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#nav-ul {
+	position: absolute;
+	top: 0;
+}
+
+#nav-ul.fixed {
+	top: 0;
+	position: fixed;
+}
+
+#nav-ul li {
+	margin-bottom: 0.2rem;
+}
+
+#nav-ul a {
+	display: block;
+	/* border:1px solid #999;*/
+	border-radius: 5px;
+	color: #b69d75;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+#nav-ul li.active a {
+	background: #21b287;
+	color: #fff;
+}
+
+#nav-ul .icon {
+	display: inline-block;
+	width: 0.25rem;
+	height: 0.25rem;
+	margin-right: 0.15rem;
+	border-radius: 5px;
+}
+
+#nav-ul .team {
+	background: url(../images/icon-taocan.jpg) no-repeat 0 0;
+}
+
+#nav-ul .cold-dish {
+	background: url(../images/icon-cold-dish.jpg) no-repeat 0 0;
+}
+
+#nav-ul .steamed-vegetables {
+	background: url(../images/steamed-vegetables.jpg) no-repeat 0 0;
+}
+
+#nav-ul .soup {
+	background: url(../images/icon-soup.jpg) no-repeat 0 0;
+}
+
+#nav-ul .hot-dishes {
+	background: url(../images/icon-hot.jpg) no-repeat 0 0;
+}
+
+#nav-ul .dessert {
+	background: url(../images/icon-dessert.jpg) no-repeat 0 0;
+}
+
+#nav-ul .fruit-juice {
+	background: url(../images/fruit-juice.jpg) no-repeat 0 0;
+}
+
+#nav-ul .hot-drinks {
+	background: url(../images/hot-drinks.jpg) no-repeat 0 0;
+}
+
+#nav-ul .drink {
+	background: url(../images/icon-drink.jpg) no-repeat 0 0;
+}
+
+#nav-ul .drinks {
+	background: url(../images/icon-drinks.jpg) no-repeat 0 0;
+}
+
+#nav-ul .icon {
+	background-size: 100% 100%;
+}
+
+#nav-ul li span {
+	vertical-align: middle;
+}
+
+
+/* =============== 产品内容页 ============== */
+
+#tit_cont .home {
+	right: 0.2rem;
+	top: 15px;
+}
+
+#form-dishes {
+	font-size: 0.2rem;
+}
+
+#form-dishes i {
+	font-style: normal;
+}
+
+.options {
+	border: 1px solid #cecece;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 0 0.2rem;
+	position: relative;
+	margin-right: 0.2rem;
+	cursor: pointer;
+	margin-bottom: 5px;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.options.cur {
+	border-color: #ed1516;
+}
+
+.selected {
+	background: url(../images/bg_arrow.png) no-repeat right bottom;
+	position: absolute;
+	display: inline-block;
+	width: 0.16rem;
+	height: 0.16rem;
+	line-height: 0.22rem;
+	text-align: right;
+	bottom: 0px;
+	right: 0px;
+	background-size: 100%;
+}
+
+.selected img {
+	width: 0.1rem;
+}
+
+.btn_num {
+	border: 1px solid #cecece;
+	border-radius: 5px;
+	display: inline-block;
+	overflow: hidden;
+	/*height: 0.5rem;
+	line-height: 0.5rem;*/
+	vertical-align: middle;
+	text-align: center;
+}
+
+.btn_num .failed {
+	filter: Alpha(Opacity=30);
+	Opacity: 0.3;
+}
+
+.btn_num a {
+	display: inline-block;
+	cursor: pointer;
+	width: 0.4rem;
+	height: 100%;
+	vertical-align: top;
+}
+
+.btn_num a img {
+	width: 100%;
+}
+
+.btn_num .num {
+	display: inline-block;
+	padding: .03rem .13rem;
+	border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+}
+
+#custom-require span {
+	display: block;
+	height: 0.6rem;
+	vetical-align: top;
+	float: left;
+}
+
+#custom-require .require {
+	width: 80%;
+	display: inline-block;
+}
+
+.discount {
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+
+/* =============== 餐桌管理 ============== */
+
+#dining-table {
+	/*background:#c6b89d;*/
+	padding-top: 0.2rem;
+}
+
+#dining-table .idle {
+	background-color: #ede7d7;
+	padding: 0.1rem 0.2rem;
+	margin-bottom: 0.2rem;
+	border: 2px solid #fff;
+}
+
+#dining-table .dinner {
+	background-color: #f4c23b;
+	color: #fff;
+}
+
+#dining-table .name {
+	border-bottom: 1px dashed #bab4a6;
+	padding-bottom: 0.1rem;
+}
+
+#dining-table .idle.checked {
+	border-color: #090;
+}
+
+
+/* =============== 会员管理 ============== */
+
+#member {}
+
+#member .row {
+	border-bottom: 1px solid #ccc;
+}
+
+
+/* =============== 订单中心 ============== */
+
+.dining_num {}
+
+.dining_num .num,
+.list_menu .num {
+	padding: 0 0.15rem;
+}
+
+.list_menu th {
+	padding: 0.1rem 0;
+}
+
+.list_menu> thead> tr> th,
+.list_menu> tbody> tr> td,
+.team_menu> thead> tr> th,
+.team_menu> tbody> tr> td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/* =============== 页脚 ============== */
+
+.footer_bottom {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	background-color: #fff
+}
+
+.footer_bottom .fobtn {
+	display: inline-block;
+	float: right;
+	width: 132px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #e4393c;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#addCart.grey {
+	background: #999
+}
+
+.total {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-bottom: 10px;
+	color: #000000
+}
+
+.spfloat {
+	color: #e4393c
+}
+
+
+/* =============== 团队套餐 ============== */
+
+.goods .familiar {
+	position: absolute;
+	left: 43px;
+	top: 90px;
+	width: 49px;
+	font-size: 12px;
+	color: #fff;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 18px 0 8px;
+	background-color: #3985ff
+}
+
+.name {
+	min-height: 36px
+}
+.name span:nth-of-type(2) {
+	opacity: .3;
+	padding:.01rem .02rem .01rem .01rem;
+	border-radius: .3rem;
+	background: #8ad928;
+}
+.goods .lower_price {
+	top: 90px;
+	background-color: #ec7476
+}
+
+image_tag,
+.goods .lower_price {
+	position: absolute;
+	left: 43px;
+	width: 75px;
+	font-size: 10px;
+	color: #fff;
+	text-align: center
+}
+
+.image {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	display: block;
+	width: 75px;
+	height: 75px
+}
+
+.sku {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	font-size: 12px;
+	color: #666;
+	line-height: .3rem;
+	border-radius: 2px
+}
+
+.price {
+	color: #e4393c;
+	font-size: 10px
+}
+
+.goods .num_and_more {
+	margin-top: 5px;
+	overflow: hidden
+}
+
+.goods .action,
+.item_group .action {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	height: 100%;
+	overflow: hidden;
+	background: #fafafa;
+	font-size: 0;
+	white-space: nowrap
+}
+
+.goods .action .button,
+.item_group .action .button {
+	display: inline-block;
+	width: 75px;
+	height: 100%;
+	color: #333;
+	background: #eff1f3;
+	position: relative
+}
+
+.additional_area .kind {
+	position: relative;
+	padding-left: 45px;
+	background-color: #fff9f9
+}
+
+.additional_area .stuff .des,
+.address_bar .address em,
+.gift_list_3c li p,
+.select_list .name {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+
+/* =============== 页脚 ============== */
+
+.fixBar {
+	z-index: 100;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 50px;
+	background: hsla(0, 0%, 100%, .95);
+	color: #333;
+	font-size: 14px
+}
+
+.fixBar .total {
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+.fixBar .btns {
+	position: absolute;
+	right: 10px;
+	top: 12px
+}
+
+
+/* =============== 全选 ============== */
+
+.fixBar .icon_select {
+	width: 41px;
+	padding-top: 30px;
+	font-size: 10px;
+	text-align: center;
+	height: 1em;
+	line-height: 1em
+}
+
+
+/*------------修改--------------*/
+
+
+/*清除浮动*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0
+}
+
+.clearfix {
+	zoom: 1
+}
+
+#list-dishes .row>div {
+	/*border: 1px solid #ccc;*/
+	border-radius: 5px;
+	overflow: hidden;
+	/*background: burlywood;*/
+	padding: 0 5px;
+	margin-bottom: .2rem;
+}
+
+#list-dishes .share_list_item_bootm {
+	background: yellowgreen;
+}
+
+#list-dishes .share_list_item {
+	width: 50%;
+	float: left;
+	position: relative;
+	padding-left: .25rem;
+}
+
+#list-dishes .share_list_item_rigth {
+	float: left;
+	width: 50%;
+}
+
+#list-dishes .share_list_item img {
+	width: 100%;
+	height: 100%;
+	border-radius: .1rem;
+}
+#list-dishes .share_list_item input {
+	position: absolute;
+	left:0;
+	top: 40%;
+}
+#list-dishes .share_list_item_bottom {
+	float: left;
+	padding-left: .27rem;
+	margin-top: .1rem;
+}
+#list-dishes .share_list_item_bottom span:nth-of-type(2){
+	margin-left: .2rem;
+}
+#list-dishes .share_list_item_bottom .tags_control,
+#list-dishes .share_list_item_bottom .tags {
+	float: left;
+}
+
+#list-dishes .share_list_item_bottom .tags_control {
+	/*margin-top: .07rem;*/
+}
+
+#list-dishes .share_list_item_bottom .tags_control>span {
+	padding: .05rem .1rem;
+	background: yellowgreen;
+	border-radius: .1rem;
+	margin-right: .05rem;
+	color: #fff;
+	background: #8ad928;
+}
+#list-dishes .share_list_item_bottom .less,
+#list-dishes .share_list_item_bottom .add {
+	position: relative;
+	top: .02rem;
+	border-radius: 0.05rem;
+	border: 1px solid #fff;
+	overflow: hidden;
+}
+.list_top {
+	text-align: left;
+}
+.list_top input {
+	margin: 0 .1rem 0 .08rem;
+}
+.share_list_item .status {
+	/*width: 10px;*/
+}
+
+#checkAll i ,
+#checkAll span {
+	font-size: 14px;
+	float: left;
+}
+#checkAll .checkbox {
+	margin: 0;
+}
+#checkAll span:nth-of-type(1) {
+	margin: 0 .5rem;
+}
+.btngrey {
+	padding: .1rem;
+	border-radius: 5px;
+	background: #8ad928;
+	color: #fff;
+	font-size: .16rem;
+}
+footer>p{
+	font-size: 10px;
+	margin-top: .2rem;
+	text-align: center;
+}

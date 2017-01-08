@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>订单中心</title>
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet" />
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fontsize.js"></script>
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="container-fluid topHead txt-center pos_rel"><a href="javascript:history.back(-1);" class="pos_abs goBack"><span class="glyphicon glyphicon-chevron-left"></span></a>我的订单</div>
+<div class="container-fluid">
+    <div class="row h4">
+    	<div class="col-xs-12 col-sm-4 col-md-4 mt20">就餐时间：2016-12-25 10:07</div>
+        <div class="col-xs-12 col-sm-4 col-md-4 mt20">
+        	<span>就餐人数：</span>
+            <span class="dining_num">
+                <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+                <span class="num" id="num">1</span>
+                <a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+            </span>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 mt20">订单号：123456</div>
+    </div>
+</div>
+<div class="container-fluid mt20">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="list_menu table table-striped">
+  <thead>
+      <tr>
+        <th width="16%">菜名</th>
+        <th width="16%">数量</th>
+        <th width="16%">金额</th>
+        <th width="16%">是否打印</th>
+        <th width="20%">上菜方式</th>
+        <th width="16%">删除</th>
+      </tr>
+  </thead>
+  <tr class="menu_box">
+    <td><img src="images/none/img-04.jpg" alt="" title="" class="full-img" /></td>
+    <td>
+        <a href="javascript:;" class="btn_less"><span class="glyphicon glyphicon-minus"></span></a>
+        <span class="num">1</span>
+        <a href="javascript:;" class="btn_plus"><span class="glyphicon glyphicon-plus"></span></a>
+    </td>
+    <td>￥<span class="subtotal">20.00</span><input type="hidden" class="price" value="20.00" /></td>
+    <td><button type="button" class="btn btn-primary">打印</button></td>
+    <td><button type="button" class="btn btn-primary">叫起</button><span class="mr10"></span><button type="button" class="btn btn-primary">即起</button></td>
+    <td><a href="javascript:;" class="btn_del">删除</a></td>
+  </tr>
+  <tr class="menu_box">
+    <td><img src="images/none/img-04.jpg" alt="" title="" class="full-img" /></td>
+    <td>
+        <a href="javascript:;" class="btn_less"><span class="glyphicon glyphicon-minus"></span></a>
+        <span class="num">1</span>
+        <a href="javascript:;" class="btn_plus"><span class="glyphicon glyphicon-plus"></span></a>
+    </td>
+    <td>￥<span class="subtotal">10.00</span><input type="hidden" class="price" value="10.00" /></td>
+    <td><button type="button" class="btn btn-default">已打印</button></td>
+    <td><button type="button" class="btn btn-default">叫起</button><span class="mr10"></span><button type="button" class="btn btn-primary">即起</button></td>
+    <td><a href="javascript:;" class="btn_del">删除</a></td>
+  </tr>
+  <tr class="menu_box">
+    <td><img src="images/none/img-04.jpg" alt="" title="" class="full-img" /></td>
+    <td>
+        <a href="javascript:;" class="btn_less"><span class="glyphicon glyphicon-minus"></span></a>
+        <span class="num">1</span>
+        <a href="javascript:;" class="btn_plus"><span class="glyphicon glyphicon-plus"></span></a>
+    </td>
+    <td>￥<span class="subtotal">10.00</span><input type="hidden" class="price" value="10.00" /></td>
+    <td><button type="button" class="btn btn-default">已打印</button></td>
+    <td><button type="button" class="btn btn-primary">叫起</button><span class="mr10"></span><button type="button" class="btn btn-default">即起</button></td>
+    <td><a href="javascript:;" class="btn_del">删除</a></td>
+  </tr>
+</table>
+
+</div>
+<div class="container-fluid mt20">
+    <div class="row h4">
+    	<div class="col-xs-8 col-sm-8 col-md-8">合计：￥<span id="total"></span></div>
+        <div class="col-xs-4 col-sm-4 col-md-4 txt-center"><button type="button" class="btn btn-primary">确认菜单</button></div>
+    </div>
+</div>
+<script src="js/public.js"></script>
+<script>
+$(function(){
+	sum('#total','.menu_box' ,'.subtotal')//计算金额
+
+	$('.menu_box').find('.btn_plus').bind('click', function() {
+		fnPlus($(this), '.num', '.btn_less');
+		sum('#total','.menu_box' ,'.subtotal')//计算金额
+	});
+	$('.menu_box').find('.btn_less').bind('click', function() {
+		fnLess($(this), '.num');
+		sum('#total','.menu_box' ,'.subtotal')//计算金额
+	});
+	
+	//人数加减
+	$(".dining_num .less").bind('click', function(){
+		fnLess($(this), '.num');
+	});
+	$(".dining_num .add").bind('click', function(){
+		fnPlus($(this), '.num', '.less');
+	});
+	
+	//删除菜品
+	$('.btn_del').on('click',function(){
+		$(this).parent().parent().remove();
+		sum('#total','.menu_box' ,'.subtotal')//计算金额
+		
+	});
+});
+
+</script>
+</body>
+</html>

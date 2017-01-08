@@ -1,0 +1,788 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>主页</title>
+		<link type="text/css" href="css/bootstrap.css" rel="stylesheet" />
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/bootstrap-switch.min.css"/>
+		<link rel="stylesheet" href="css/bootstrap-switch.min.css"/>
+		<link rel="stylesheet" href="css/timedropper.min.css"/>
+		<link rel="stylesheet" href="css/datedropper.css"/>
+		<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+	</head>
+
+	<body>
+		<div class="container-fluid" id="logo"><img src="images/logo.png" alt="logo" title="logo" /></div>
+		<div class="container-fluid bg-green pb5 head" id="head">
+			<div class="row lh40 hidden-xs">
+				<div class="col-xs-7 col-sm-7 col-md-7">会员：腾冲市腾越镇热海旅行社</div>
+				<div class="col-xs-5 col-sm-5 col-md-5 txt-right">
+					<a href="dining-table.html" class="mr10">桌台</a>:顺风热海包房
+				</div>
+				<div class="col-xs-7 col-sm-7 col-md-7">
+					<p class="go-time">
+						<span>选择就餐时间:</span>
+						<input type="text" class="input" id="pickdate" />
+						<input type="text" class="input" id="picktime" />
+					</p>
+				</div>
+				<div class="col-xs-5 col-sm-5 col-md-5 txt-right">
+					<a href="order.html"><span class="glyphicon glyphicon-list-alt" style="vertical-align:middle;"></span>&nbsp;&nbsp;<span class="ver-middle">加桌</span></a>
+				</div>
+			</div>
+			<div class="row lh40 hidden-sm">
+				<div class="col-xs-7 col-sm-7 col-md-7">团队人数：<span>123人</span></div>
+				<div class="col-xs-5 col-sm-5 col-md-5">
+					<a href="dining-table.html" class="mr10">减免人数：</a>
+				</div>
+				<div class="col-xs-7 col-sm-7 col-md-7"><span>热海包房</span></div>
+				<div class="col-xs-5 col-sm-5 col-md-5">
+					<a href="order.html"><span class="glyphicon glyphicon-list-alt" style="vertical-align:middle;"></span>&nbsp;&nbsp;<span class="ver-middle">实际人数：100</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid mt10">
+			<div class="row pos_rel">
+				<!--菜品分类 start-->
+				<div class="col-xs-4 col-sm-3 col-md-3" id="nav-dishes">
+					<ul class="nav" id="nav-ul">
+						<li class="active">
+							<a href="#team"><span class="icon team"></span>团队套餐</a>
+						</li>
+						<li>
+							<a href="#cold-dish"><span class="icon cold-dish"></span>凉菜</a>
+						</li>
+						<li>
+							<a href="#steamed-vegetables"><span class="icon steamed-vegetables"></span>蒸菜</a>
+						</li>
+						<li>
+							<a href="#soup"><span class="icon soup"></span>汤菜</a>
+						</li>
+						<li>
+							<a href="#hot-dishes"><span class="icon hot-dishes"></span>热菜</a>
+						</li>
+						<li>
+							<a href="#dessert"><span class="icon dessert"></span>点心</a>
+						</li>
+						<li>
+							<a href="#fruit-juice"><span class="icon fruit-juice"></span>果汁</a>
+						</li>
+						<li>
+							<a href="#hot-drinks"><span class="icon hot-drinks"></span>热饮</a>
+						</li>
+						<li>
+							<a href="#drink"><span class="icon drink"></span>饮料</a>
+						</li>
+						<li>
+							<a href="#drinks"><span class="icon drinks"></span>酒水</a>
+						</li>
+					</ul>
+				</div>
+				<!--菜品分类 end-->
+				<!--菜品列表 start-->
+				<div class="col-xs-8 col-sm-9 col-md-9 txt-center" id="list-dishes">
+
+					<!--团队套餐-->
+					<div class="row">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>团队套餐专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num">0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--凉菜-->
+					<div class="row" id="cold-dish">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>凉菜专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--蒸菜-->
+					<div class="row" id="steamed-vegetables">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>蒸菜专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--汤菜-->
+					<div class="row" id="soup">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>汤菜专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--热菜-->
+					<div class="row" id="hot-dishes">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>热菜专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--点心-->
+					<div class="row" id="dessert">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>点心专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--果汁-->
+					<div class="row" id="fruit-juice">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>果汁专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--热饮-->
+					<div class="row" id="hot-drinks">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>热饮专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--饮料-->
+					<div class="row" id="drink">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>饮料专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--酒水-->
+					<div class="row" id="drinks">
+						<h5 class="list_top"><input type="checkbox" data-switch-no-init>酒水专区</h5>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="javascript:;" class="clearfix">
+								<div class="share_list_item">
+									<input type="checkbox" data-switch-no-init>
+									<img class="good_image" src="images/none/img-04.jpg" alt="" title="" />
+								</div>
+								<div class="share_list_item_rigth">
+									<p class="name">
+										<span>菜品名称</span>
+										<span class="glyphicon glyphicon-minus"></span>
+									</p>
+									<p class="sku">单位：盒</p>
+									<p class="price">¥ <em>49</em>.00</p>
+								</div>
+							</a>
+							<div class="share_list_item_bottom clearfix">
+								
+								<p class="tags clearfix">
+									<span class="tag">  
+	                                    <span class="btn_num">
+						                    <a href="javascript:;" class="less failed"><span class="glyphicon glyphicon-minus"></span></a>
+											<span class="num" >0</span>
+											<a href="javascript:;" class="add"><span class="glyphicon glyphicon-plus"></span></a>
+										</span>
+									</span>
+									<span>数量：<span class="numb">0</span></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="share_bottom clearfix" id="checkAll">
+						<i class="checkbox"> 全选</i>
+						<span>总计：<strong>565</strong></span>
+						<span class="btngrey">加入我的订单</span>
+					</div>
+				</div>
+				<!--菜品列表 end-->
+			</div>
+		</div>
+		<footer>
+			<p>技术支持：腾冲市腾越镇中联软件开发</p>
+		</footer>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/highlight.js"></script>
+		<script src="js/bootstrap-switch.min.js"></script>
+		<script src="js/fontsize.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/timedropper.min.js"></script>
+		<script src="js/datedropper.min.js"></script>
+		<script>
+			$(function() {
+
+				$('body').css('padding-bottom', $('#footer').outerHeight());
+
+				var h = $('#logo').outerHeight() + $('#head').outerHeight() + 100;
+				$('body').scrollspy({
+					target: '#nav-dishes',
+					offset: h
+				});
+
+				var widthNav = $('#nav-ul').parent().width();
+				$('#nav-ul').css({
+					width: widthNav
+				});
+
+				$('#list-dishes a').each(function() {
+					var _this = $(this);
+					_this.on('click', function() {
+						if(_this.hasClass('cur')) {
+							_this.removeClass('cur');
+						} else {
+							_this.addClass('cur');
+						}
+					});
+				});
+			});
+			
+			//改变数量
+			changeNum('.add');
+			changeNum('.less');
+			
+			$(window).scroll(function() {
+				if($(window).scrollTop() >= ($('#logo').outerHeight() + $('#head').outerHeight())) {
+					$('#nav-ul').addClass('fixed');
+				} else {
+					$('#nav-ul').removeClass('fixed');
+				}
+			});
+		</script>
+		<script>
+			$("#pickdate").dateDropper({
+				animate: false,
+				format: 'Y-m-d',
+				maxYear: '2020'
+			});
+			$("#picktime").timeDropper({
+				meridians: false,
+				format: 'HH:mm',
+			});
+		</script>
+	</body>
+
+</html>
